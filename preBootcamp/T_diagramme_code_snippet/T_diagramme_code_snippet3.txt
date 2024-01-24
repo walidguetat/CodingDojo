@@ -1,0 +1,32 @@
+ Accurately predict the outcomes of code snippets using T-diagrams.
+
+
+				 T    -  diagramme  (Code Snippet 3 )
+
+					  | 
+  name of variable    |   value of variable
+ ---------------------|--------------------------------------------------
+  MovieLibrary        |   ["Bambies","E . T","Toy Story"]
+  MovieLibrary[1]     |   ["Beetletjuice"]
+					  |
+					  |
+					  |
+					  |
+					  |       
+					  |
+					  |												  
+					  |
+					  |
+					  |   
+					  |
+
+
+==================================================================
+				  Result
+==================================================================
+			  console.log()
+
+
+["Bambies","Beetletjuice","Toy Story","Zorro"]
+
+-------------------------------------------

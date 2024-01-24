@@ -1,0 +1,38 @@
+ Accurately predict the outcomes of code snippets using T-diagrams.
+
+
+                 T    -  diagramme  (Code Snippet 2 )
+
+                      | 
+  name of variable    |   value of variable
+ ---------------------|--------------------------------------------------
+  produce             |   ["apples","oranges"]
+  frozen              |   ["brocoli,"ice cream"]
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+
+
+==================================================================
+                  Result
+==================================================================
+              console.log()
+
+
+["brocoli,"ice cream",hashbrowns]
+
+-------------------------------------------

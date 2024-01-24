@@ -1,0 +1,38 @@
+ Accurately predict the outcomes of code snippets using T-diagrams.
+
+
+                 T    -  diagramme  (Code Snippet 1 )
+
+                      | 
+  name of variable    |   value of variable
+ ---------------------|--------------------------------------------------
+  contactInfo         |   ["Paula","Smith","1234 Main street","St. Louis",12345]
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+
+
+==================================================================
+                  Result
+==================================================================
+              console.log()
+
+["Paula","Smith","1234 Main street","St. Louis",12345]
+
+
+-------------------------------------------
