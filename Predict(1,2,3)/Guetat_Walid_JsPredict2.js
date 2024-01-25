@@ -1,6 +1,6 @@
 
 
-// Predict 2: What will the console.log state when this function is called?
+// Predict 2: WWhat will the console.log state when this function is called?
 
 
 function myBirthYearFunc(birthYearInput){
