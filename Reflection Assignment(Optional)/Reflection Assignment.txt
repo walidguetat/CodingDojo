@@ -1,0 +1,44 @@
+  
+
+  ----------  Reflection Assignment (Optional)  ----------
+
+
+  ---------------------------------------------------------------
+     1) How have you noticed your bootcamp knowledge
+        grow or change during Programming Basics?
+  ---------------------------------------------------------------
+
+  I noticed that my knowledge in this training camp became a little better even though,
+  I am in the early stages of training, 
+  but I liked the way the platform works,
+  despite the fact that I have a prior background in programming.
+
+  ---------------------------------------------------------------
+
+
+
+
+   ---------------------------------------------------------------
+     2) How have you noticed your approach 
+        to learning change throughout
+        Programming Basics?
+  ---------------------------------------------------------------
+
+  I noticed that I began to understand basic concepts,
+  mastered the basics,improved and used logic 
+  to solve simple problems
+
+  ---------------------------------------------------------------
+
+
+   ---------------------------------------------------------------
+     3) What do you consider your "Mistake of the Week,
+        "which was a failure you learned 
+         from during Programming Basics?
+  ---------------------------------------------------------------
+
+  I had a slight problem understanding
+  the use of the repeat command tools,
+  but thanks to using the T-Diagram, I am now better
+
+  ---------------------------------------------------------------
