@@ -1,0 +1,21 @@
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: aliceblue;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+}
+.h1center{
+    text-align: center;
+    background-color: blueviolet;
+    font-style: italic;
+}
+.h1right{
+    text-align: right;
+    text-decoration: underline;
+    background-color:cornflowerblue;
+    padding-right: 20px;
+}
+span{
+    color: aqua;
+}
