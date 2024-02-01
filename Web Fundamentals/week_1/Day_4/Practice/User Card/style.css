@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Lobster', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.countainer{
+  display: block;
+  align-items: center;
+  width: 700px;
+  height: 300px;
+  background-color:ghostwhite; 
+  border: 5px solid gray;
+  
+}
+.top_countainer{
+    
+    
+    width: 700px;
+    height: 100px;
+    background-color:cadetblue;
+    
+}
+.bottom_countainer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding:30px;
+    
+    
+}
+.img_map_marker{
+
+    width: 15px;
+    height: 15px;
+
+}
+.img_gear{
+    width: 15px;
+    height: 15px;
+}
+
+.user_circle{
+    position:absolute;
+    width:75px;
+    height:75px;
+    margin-left: 50px;
+    margin-top: 60px;
+    border-radius: 50%;
+    border: 5px solid gray;
+    
+    
+}
+p{
+
+}
