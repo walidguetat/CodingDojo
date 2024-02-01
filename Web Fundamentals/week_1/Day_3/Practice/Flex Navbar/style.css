@@ -1,0 +1,39 @@
+body{
+    font-family: 'Fugaz One', sans-serif;
+    font-family: 'Lobster', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+  background-color: gray;
+  height: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.nav-title{
+
+}
+.nav-links{
+display: flex;
+align-items: center;
+list-style-type: none;
+gap: 20px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.active{
+  font-weight: bold;
+}
+.btn{
+  background-color:rgba(21, 21, 240, 0.819);
+  color: white;
+  border: 2px solid black;
+  width:90px;
+  height: 30px;
+  box-shadow: 3px 3px 2px 1px black;
+}
+
