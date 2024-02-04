@@ -1,0 +1,125 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+      
+  /* Fixed width container class that will "auto-center" itself */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  /* my all code css my library
+
+
+  /* navbar classess */
+
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color:black;
+    margin-bottom: 30px;
+}
+
+.div_mnu{
+    display: flex;
+    flex-direction: row;
+    padding-left: 125px;
+    width: 500px;
+    height: 80px;
+}
+.div_btn{
+    display: flex;
+    flex-direction: row;
+    align-content:flex-end;
+    width: 300px;
+
+}
+
+  /* countainer flex classess*/
+
+
+ .countainer{
+      display:flex;
+      width: 1000px;
+      height: 900px;
+      background-color:aliceblue; 
+}
+
+/* countainer flex colomun*/
+.col{
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    margin-top: 20px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    margin-top: 20px;
+    margin-left: 20px;
+}
+/* countainer flex row */
+
+.row{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    
+}
+
+
+/* button classess */
+
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: steelblue;
+    color: aliceblue;
+    border-style: none;
+    font-size: x-large;
+    margin-right: 160px;
+}
+
+
+/*  link active classess */
+
+
+.active{
+    color:steelblue;
+    font-weight: bold;
+}
+
+.active1{
+    color:steelblue;
+    font-weight:normal;  
+}
+
+/* images classess */
+
+.img_map_marker{
+    width: 15px;
+    height: 15px;
+}
+
+.img_jane{
+    display: inline;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    position:absolute;
+    margin-left: 100px;
+    margin-top: 90px;
+    border: 5px solid gray;
+}
