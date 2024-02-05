@@ -8,12 +8,15 @@
     <title>Button clicker</title>
 </head>
 <body>
+    <!-- used this navbar -->
     <div class="navbar">
         <div><h1>Dojonary</h1></div>
         <div><input type="search" name="search" placeholder="Search" class="search"></div>
         <div><button type="submit" class="btn_login" onclick="login_logout(this)">Login</button></div>
     </div>
+    <!-- used this parent principal countainer  -->
     <div class="countainer">
+        <!-- used this parent secondory left countainer  -->
         <div class="countainer_left">
             <div class="countainer_left_1">
                 <div class="countainer_left_11">
@@ -50,13 +53,16 @@
             </div>
             
         </div>
+        <!-- used this parent secondory right countainer  -->
             <div class="countainer_right">
-            <div class="countainer_right_1">
-                <div><h1>Dojonary is defined by YOU</h1></div>
-                <div><button type="submit" class="btn_add_define" onclick="remove_definiton(this)">Add Definition</button></div>
-            </div>
+                <div class="countainer_right_1">
+                    <div><h1>Dojonary is defined by YOU</h1></div>
+                    <div><button type="submit" class="btn_add_define" onclick="remove_definiton(this)">Add Definition</button></div>
+                </div>
         </div>
     </div>
+
+    <!-- am used the script for my list buttons  -->
     <script>
         function login_logout(element){
             element.innerText="Log Out";
