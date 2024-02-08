@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Easy Bay</title>
+</head>
+<body>
+    <!-- used couantainer principal -->
+    <div class="countainer">
+         
+        <!-- navbar -->
+
+        <div class="navbar">
+
+            <!-- title_navbar -->
+
+           <div class="navbar_titre">
+             <span><img src="./images/assets/leaf.png" alt="Logo the leaf"></span>
+             <h1>Easy Bay</h1>
+           </div>
+           <!-- navbar_search -->
+           <div class="navbar_search">
+            <input type="search" placeholder="Searching for anything">
+           </div>
+           <!-- navbar_btn -->
+           <div class="navbar_btn">
+              <button type="submit">Sign In</button>
+              <button type="submit"><img src="./images/assets/cart-dark.png" alt="The cart dark" onclick="empty(this)"></button>
+           </div>
+          
+        </div>
+        <!-- header -->
+        <div class="header">
+            <ul>
+                <li>Aeonium</li>
+                <li>Andomrmischus</li>
+                <li>Agave</li>
+                <li>Aloe</li>
+                <li>Anacampsereros</li>
+                <li>Aristaloe</li>
+                <li>More...</li>
+            </ul>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <!-- title_main -->
+            <div class="title_main">
+              <h1>Your Source for Serious Succlent Spetial</h1>
+            </div>
+            <div class="body_main">
+                <div class="sub_main1">
+                    <h2>Discover succ-ulent varrieties one pot or rack  at a time!</h2>
+                    <button>Discover <img src="./images/assets/arrow-light.png" alt="the arrow light"></button>
+                </div>
+                <div class="sub_main2">
+                    <img src="./images/assets/succulents-1.jpg" alt="the succulents 1" id="img_secculent1" onmouseover="img_over()" onmouseout="img_out()">
+                </div>
+                <div class="sub_main3">
+                    <img src="./images/assets/aloe-m.jpg" alt="aloe m">
+                    <button>Snoothing <img src="./images/assets/arrow-light.png" alt="the arrow light"></button>
+                </div>
+
+            </div>
+            <div class="list_product">
+                <P><img src="./images/assets/aeonium-s.jpg" alt="the aeonium">Aeonium</P>
+                <p><img src="./images/assets/aloe-s.jpg" alt="aloe-s">Aloe</p>
+                <p><img src="./images/assets/cactus-s.jpg" alt="cactus-s">Cactus</p>
+                <p><img src="./images/assets/echeveria-s.jpg" alt="echeveria-s">Echeveria</p>
+                <p><img src="./images/assets/sedum-s.jpg" alt="the sedum-s">sedum</p>
+                <p><img src="./images/assets/sempervivum-s.jpg" alt="the sempervivum-s">Sempervivum</p>
+            </div>
+            
+          
+        </div>
+        <div class="position" >
+            <img src="./images/assets/alert-dark.png" alt="alert dark">
+            <p>
+                This site makes use of third-party cookies ,
+                by clicking "I accept " you agree to the terms outlined in our cookie policy.
+            </p>
+            <button id="btn_alert" onclick="remove()">I accept</button>
+         </div>
+     </div>
+
+     
+    
+<script src="script.js"></script>
+</body>
+</html>

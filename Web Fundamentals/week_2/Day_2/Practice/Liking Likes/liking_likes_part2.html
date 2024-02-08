@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Liking Likes part 2</title>
+</head>
+<body>
+        <!-- navbar -->
+        <div class="navbar">
+            <h3>Network</h3>
+        </div>
+        <!-- header -->
+        <div class="header">
+            <h2>Your Feed </h2>
+        </div>
+        <!-- countainer -->
+        <div class="countainer">
+            <div class="countainer_left">
+                <div>
+                    <img src="./images/jane-m.jpg" alt="user profile">
+                    <a href="#">Add an Avatar</a>
+                    <h3>James Doe</h3>
+                </div>
+            </div>
+            <div class="countainer_right">
+
+                <div class="main">
+                    <div class="main1">
+                        <h3>Neil M</h3>
+                        <h3> <span class="nb_like">9</span> Like(s) </h3>
+                        <button onclick="add_like(this)">Like</button>
+                    </div>
+                    <div class="main2">
+                        <p>I just set up this new Discord bot,
+                           let me know what you all think. <a href="#">link</a> 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <div class="main1">
+                        <h3>Nichole K</h3>
+                        <h3> <span class="nb_like1">12</span> Like(s) </h3>
+                        <button onclick="add_like1(this)">Like</button>
+                    </div>
+                    <div class="main2">
+                        <p>Just finished my <a href="#">next comic</a>, </p>check it out.
+                    </div>
+                </div>
+
+                <div class="main">
+                    <div class="main1">
+                        <h3>Jim R</h3>
+                        <h3> <span class="nb_like2">9</span> Like(s) </h3>
+                        <button onclick="add_like2(this)">Like</button>
+                    </div>
+                    <div class="main2">
+                        <p>I can't listening to the <a href="#">new album</a>
+                        Who else is liking it?
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<script src="liking_likes.js"></script>
+</body>
+</html>
