@@ -38,21 +38,33 @@ function delete_user2(element){
 }
 
 // create function add users 
+console.log(total_users);
 
 total_users1=500;
 function add_user1(element){
+    var j=total_users-1;
     var nbre_user=document.querySelector(".badge2");
     nbre_user.innerHTML=total_users1+1+"+";
     var name_user=document.querySelector(".name1");
-    name_user.remove();
-    var avatar_user=document.querySelector(".avatar3");
-    avatar_user.remove();
+    name_user.remove(); 
     var close_btn_user=document.querySelector(".icon_close1");
     close_btn_user.remove();
     var accept_btn_user=document.querySelector(".icon_accept1");
     accept_btn_user.remove();
 }
 
+ var i=total_users1+1;
+function add_user2(element){
+    var j=total_users-1;
+    var nbre_user=document.querySelector(".badge2");
+    nbre_user.innerHTML=i+1+"+";
+    var name_user=document.querySelector(".name2");
+    name_user.remove(); 
+    var close_btn_user=document.querySelector(".icon_close2");
+    close_btn_user.remove();
+    var accept_btn_user=document.querySelector(".icon_accept2");
+    accept_btn_user.remove();
+}
 
 
 
