@@ -1,0 +1,43 @@
+console.log("---------------------------------------------------------------");
+console.log("---- Used loop for ----");
+console.log("---------------------------------------------------------------");
+
+function fibonacciArray(n){
+    var fibArr=[0,1];
+    var sum=0;
+    for(var i=2;i<n;i++)
+    {
+         fibArr.push(i);
+         fibArr.pop(i);
+         sum=fibArr[i-1]+fibArr[i-2];
+         fibArr.push(sum);
+    } 
+    return fibArr;
+}
+var result=fibonacciArray(10);
+console.log(result);
+
+
+
+
+console.log("---------------------------------------------------------------");
+console.log("---- Used loop while ----");
+console.log("---------------------------------------------------------------");
+
+// used loop while
+
+function fibonacciArray(n){
+    var fibArr=[0,1];
+    var sum=0,i=2;
+    while(i<n)
+    {
+         fibArr.push(i);
+         fibArr.pop(i);
+         sum=fibArr[i-1]+fibArr[i-2];
+         fibArr.push(sum);
+         i++;
+    } 
+    return fibArr;
+}
+var result=fibonacciArray(10);
+console.log(result);
