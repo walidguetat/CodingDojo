@@ -1,0 +1,124 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+     width: 1000px; 
+
+}
+
+/* navbar */
+
+.navbar{
+    background-color: cornflowerblue;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul,li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: larger; 
+    gap:20px;
+}
+.navbar h1{
+    color: white;
+}
+.navbar a{
+    text-decoration: none;   
+}
+
+/* header  */
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    margin: 20px 20px;
+}
+
+#degree{
+    width: 50px;
+    height: 30px;
+}
+label{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* main */
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:3px;
+}
+
+/* sub main */
+
+.sub_main{
+     flex: 1;
+    background-color:lightgray;
+    padding: 10px 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.x{
+    display: flex;
+    gap:100px;
+}
+.sub_main img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px;
+}
+
+/* span left and span right */
+
+.sp_left,.sp_left1,.sp_left2,.sp_left3,.sp_left4{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sp_right,.sp_right1,.sp_right2,.sp_right3,.sp_right4{
+    color:cornflowerblue;
+    font-weight: bold;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* cookies */
+
+.cookies{
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 20px;
+  padding: 20px 20px;
+  
+  
+}
+
+.cookies button{
+   background-color: cornflowerblue;
+   width: 100px;
+   height: 40px;
+   font-size: large;
+   box-shadow: 5px 5px 5px black;
+}

@@ -7,61 +7,87 @@
     <title>Dojo Weather</title>
 </head>
 <body>
+    <!-- navbar -->
     <div class="navbar">
         <div>
             <h1>DojoWeather</h1>
         </div>
         <div>
             <ul>
-                <li>Burbank</li>
-                <li>Chicago</li>
-                <li>Dallas</li>
+                <a href="#" onclick="message_acceuil(this)"><li>Burbank</li></a>
+                <a href="#" onclick="message_acceuil(this)"><li>Chicago</li></a>
+                <a href="#" onclick="message_acceuil(this)"><li>Dallas</li></a>
             </ul>
         </div>
     </div>
+    <!-- header -->
     <div class="header">
         <div>
             <h2>San Jose </h2>
         </div>
         <div>
-            <p>Show temperature </p>
-            <select id="degree" name="Celius">
-                <option value="volvo">C</option>
-                <option value="saab">F</option>
+            
+            <form action="#">
+                <label for="">Show temperature in </label>
+              <select id="degree" name="Celius" onchange="convert_celius(this)">
+                <option value="0" >°C</option>
+                <option value="1" selected>°F</option>
               </select>
+            </form>
         </div>
     </div>
-
+    <!-- main -->
     <div class="main">
-        <div>
+        <!-- sub_main -->
+        <div class="sub_main">
             <h1>Today</h1>
             <img src="./images/some_rain.png" alt="some_rain">
             <p>some rain</p>
-            <p>24</p>
-            <p>18</p>
+            <div class="x">
+                <span class="sp_left1">24°</span>
+                <span class="sp_right1">18°</span>
+            </div>
         </div>
-        <div>
+        <!-- sub_main -->
+        <div class="sub_main">
             <h1>Tomorow</h1>
             <img src="./images/some_sun.png" alt="some_sun">
             <p>some sun</p>
-            <p>27</p>
-            <p>19</p>
+            <div class="x">
+                <span class="sp_left2">27°</span>
+                <span class="sp_right2">19°</p></span>
+            </div>
         </div>
-        <div>
+        <!-- sub_main -->
+        <div class="sub_main">
             <h1>Friday</h1>
             <img src="./images/some_clouds.png" alt="some_clouds">
             <p>Someclouds</p>
-            <p>21</p>
-            <p>16</p> 
+            <div class="x">
+                <span class="sp_left3">21°</span>
+                <span class="sp_right3">16°</span> 
+            </div>
         </div>
-        <div>
+        <!-- sub_main -->
+        <div class="sub_main">
             <h1>Saturday</h1>
             <img src="./images/some_sun.png" alt="some_sun">
             <p>Some sun</p>
-            <p>26</p>
-            <p>21</p> 
-        </div>
-        
+            <div class="x">
+                <span class="sp_left4">26°</span>
+                <span class="sp_right4">21°</span> 
+            </div>
+        </div>          
     </div>
+    <!-- cookies -->
+    <div class="cookies">
+        <img src="./images/cookie.png" alt="cookie">
+        <div>
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="accept_cookies(this)">I accept</button>
+    </div>
+    <script src="dojo_weather.js"></script>
 </body>
 </html>
