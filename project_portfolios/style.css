@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: auto;
+ }
+ body{
+    width: 1000px;
+    margin: 0px auto;
+ }
+
+
+/* title contact */
+.title_contact{
+    color:black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+span{
+    color: #0563bb;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+ /* countainer */
+
+.countainer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.countainer_left{
+    flex-direction: column;
+    width: 300px;
+    /* padding-left: 20px; */
+}
+
+.col{
+    display: flex;
+    margin: 10px 10px 10px;
+
+    
+}
+/* div{
+    align-items: center;
+} */
+.countainer_right{
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+
+.col1{
+    display: flex;
+    margin: 20px;
+}
+
+/* input */
+
+input{
+    width: 275px;
+    height: 50px;
+    border-color: #0563bb; 
+    border-radius: 5px; 
+    margin-right: 20px;
+    border-style: solid;
+    color:#0563bb;
+    font-size: large;
+    padding-left: 20px;
+    }
+
+    input:hover{
+        background-color:gainsboro;
+        border-color: #0563bb;
+        width: 275px;
+        height: 50px;
+        border-radius: 5px; 
+        margin-right: 20px;
+        border-style: solid;
+        color:#0563bb;
+        font-size: large;
+        opacity: 20%;
+        /* padding-left: 20px; */
+        }
+
+
+.input_subject{
+    width: 610px;
+    border-color: #0563bb;
+    border-radius: 5px;
+    border-style: solid;
+}
+.input_subject:hover{
+    width: 610px;
+    border-color: #0563bb;
+    border-radius: 5px;
+    border-style: solid;
+    opacity: 20%;
+}
+
+
+::placeholder{ 
+    font-size: large;
+}
+
+/* textarea */
+
+textarea{
+    border-color: #0563bb;
+    width: 610px;
+    border-radius: 5px;
+    border-style: solid;
+    color: #0563bb;
+    font-size: large;
+    padding-left: 10px;
+}
+
+textarea:hover{
+    border-color: #0563bb;
+    width: 610px;
+    border-radius: 5px;
+    border-style: solid;
+    color: #0563bb;
+    font-size: large;
+    padding-left: 10px;
+    opacity: 20%;
+}
+
+button{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 11px 26px;
+    background: #3a6cf4;
+    color: #fff;
+    border: 2px solid #3a6cf4;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .50s ease;
+}
+button:hover{
+    background: transparent;
+    color: #3a6cf4;
+    box-shadow: 0 0 20px #3a6cf4;
+}
+
+img{
+    /* border-radius: 50%; */
+    /* border: 2px solid #0563bb; */
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    
+}
