@@ -88,65 +88,75 @@ print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3) + number_of_days_i
 #10
 def addition(b,c):
     return b+c
-    return 10
-print(addition(3,5))
+    return 10   # second error return 10 
+print(addition(3,5)) 
+
+#-------------------------------------------
+
+def addition(b,c):
+    return (b+c)
+    
+result=addition(3,5)
+print(result)
+
+#--------------------------------------------
 
 #10 doesen't return nothing first exist two return values 
 
 #11
-b = 500
-print(b)
-def foobar():
-    b = 300
-    print(b)
-print(b)
-foobar()
-print(b)
+b = 500    # intiallized b by 500
+print(b)   # print b at screen 500
+def foobar():  # declared function foobar
+    b = 300    # intiallized b by 300 inside function
+    print(b)   # to print b 300 
+print(b)   # print b at screen 500 
+foobar()   # print b at screen by 300 
+print(b)   # print at screen 500 
 
-#11 
+
 
 #12
 b = 500
-print(b)
+print(b)     # print 500
 def foobar():
     b = 300
     print(b)
     return b
-print(b)
-foobar()
-print(b)
+print(b)  # print 500 
+foobar()  # prirnt 300
+print(b)  # print 500
 
 
 #13
 b = 500
-print(b)
+print(b)  #print 500 
 def foobar():
     b = 300
     print(b)
     return b
-print(b)
-b=foobar()
-print(b)
+print(b)  # print 500
+b=foobar()   # b=300
+print(b)    # print at screen 300
 
 
 #14
-def foo():
-    print(1)
-    bar()
-    print(2)
-def bar():
-    print(3)
-foo()
+def foo():   # create function foo()
+    print(1) # print 1 at screen  
+    bar()    # print 3 at screen 
+    print(2) # print 2 at screen 
+def bar():   # create function bar() 
+    print(3) # to print 3 at screen 
+foo()   # call this function..
 
 
 #15
-def foo():
-    print(1)
-    x = bar()
-    print(x)
-    return 10
-def bar():
-    print(3)
-    return 5
-y = foo()
-print(y)
+def foo():   # create a function foo()
+    print(1)  # to print 1 at screen 
+    x = bar()  # intiallized varriable x by value of function bar()
+    print(x)   # to print varriable of x at screen 
+    return 10  # function foo() return 10 
+def bar():     # create a function bar()
+    print(3)   # to print 3 at screen 
+    return 5   # value of return is 5
+y = foo()      # intiallized varriable y by function foo()
+print(y)       # print value 10 at screen 
