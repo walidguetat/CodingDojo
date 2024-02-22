@@ -10,20 +10,23 @@ class BankAccount:
     # create a methode to deposit
     def deposit(self, amount):
         self.balance+=amount
+        return self
     # create a methode to withdraw
     def withdraw(self, amount):
         if self.balance<=0:
             print('Insufficient funds: Charging a $5 fee and deduct $5')
         else:
             self.balance-=amount
+        return self
     # create a methode to print info accounts
     def display_account_info(self):
         print(f"Balance : {self.balance}")
-        return (self)
+        return self
     # create a methode yield interest to add 
     def yield_interest(self):
         if self.balance>0:
             self.balance=self.balance*0.19
+        return self
 
     @classmethod
     def clsAllAccounts(cls, int_rate, balance): 
@@ -47,7 +50,7 @@ account1.withdraw(20)
 account1.yield_interest()
 account1.display_account_info()
 # used chaining 
-#account1.deposit(50)..deposit(200).deposit(120).withdraw(20).yield_interest()1.display_account_info()
+account1.deposit(50).deposit(200).deposit(120).withdraw(20).yield_interest().display_account_info()
 
 # make 3 deposits and 1 withdraw and yield_interst then display info at account 2
 
@@ -62,5 +65,5 @@ account2.yield_interest()
 account2.display_account_info()
 
 # used chaining 
-#account2.deposit(50).deposit(200).withdraw(100).withdraw(50).withdraw(600).yield_interest().display_account_info()
+account2.deposit(50).deposit(200).withdraw(100).withdraw(50).withdraw(600).yield_interest().display_account_info()
 
