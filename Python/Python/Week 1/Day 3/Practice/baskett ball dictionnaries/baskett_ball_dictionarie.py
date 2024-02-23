@@ -3,24 +3,26 @@
 # Challenge 1: Update the Constructor 
 
 class Player:
+
+    new_team1=[]
+
     def __init__(self,play_one):
         self.name = play_one["name"]
         self.age = play_one["age"]
         self.position = play_one["position"]
         self.team = play_one["team"]
-        
+        Player.new_team1.append(self)
+
+    @classmethod
+    def team_player(cls):
+        for pl in cls.new_team1:
+            print (pl.name)
+
     def display_player(self):
         print(f"Name : {self.name} \nAge : {self.age} \nPosition : {self.position} \nTeam : {self.team} ")
         return self
-    def add_new_player(self,play_one):
-        new_team=[]
-        new_team.append(play_one)
-        return self
-    def display_list_player(self,new_team):
-        for i in new_team:
-            print(f" Team : {new_team[i]} \n")
-        return self
 
+    
 
 
 
@@ -51,15 +53,15 @@ print("\n------------------------------------------\n")
 
 # Challenge 3: Make a list of Player instances from a list of dictionaries
 
-new_team=[]
+
 
 player_one1={"name":"Walid guetat","age":20,"position":"milieu","team":"Taraji"}
 
 player1=Player(player_one1)
-player1.add_new_player(player_one1)
-player1.display_list_player(new_team)
+# player1.add_new_player(player_one1)
+# player1.display_list_player(new_team)
 
-
+Player.team_player()
 # bonnus  Next times 
 
 
