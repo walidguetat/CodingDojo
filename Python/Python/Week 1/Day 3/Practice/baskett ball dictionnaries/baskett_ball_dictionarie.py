@@ -64,6 +64,8 @@ player1=Player(player_one1)
 Player.team_player()
 # bonnus  Next times 
 
+print("\n------------------------------------------\n")
+
 
 
 
