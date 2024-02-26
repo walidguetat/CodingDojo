@@ -1,0 +1,32 @@
+*{
+   width: auto 0px;
+}
+
+body{
+    align-content:  center;
+    width: 1000px auto;
+    margin: auto;
+}
+
+h1{
+    color:black;
+    text-align: center;
+}
+
+div{
+    border: 3px black solid;
+    width: 600px;
+    height: 150px;
+    background-color:cornflowerblue;
+    margin: 20px 20px;
+}
+
+.principal{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border: none;
+    max-width: 1000px;
+    margin: auto;
+}
