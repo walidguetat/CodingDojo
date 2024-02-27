@@ -1,0 +1,24 @@
+insert into users (name_user) values ('Jane Amsden'),('Emily Dixon'),('Theodore Dostovesky'),('William shapiro'),('Lao Xiu');
+
+
+select * from users;
+
+insert into books (title,number_of_page) values ('C Sharp',250),('Java',350),('Python',420),('Php',500),('Ruby',280);
+
+
+select * from books;
+
+
+
+SET SQL_SAFE_UPDATES = 0;
+
+
+update books
+set title= 'C#'
+where title='C sharp';
+
+
+
+update users
+set name_user= 'Bill'
+where id_user=4;
