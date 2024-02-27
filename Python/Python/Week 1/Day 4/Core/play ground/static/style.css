@@ -13,18 +13,20 @@ h1{
     text-align: center;
 }
 
-div{
+.div1{
     border: 3px black solid;
-    width: 600px;
+    border-radius: 5%;
+    width: 150px;
     height: 150px;
     background-color:cornflowerblue;
-    margin: 20px 20px;
+    margin: 20px;
 }
 
 .principal{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
-    align-items: center;
+    justify-content: center;
     background-color: aliceblue;
     border: none;
     max-width: 1000px;
