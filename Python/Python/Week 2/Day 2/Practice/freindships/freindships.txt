@@ -1,0 +1,18 @@
+insert into users (first_name,last_name) values ('Amy','Giver'),('Amy','Giver'),('Amy','Giver'),('Eli','Byers'),('Eli ','Byers'),('Marky','Mark');
+select * from users;
+
+SELECT * FROM users 
+JOIN friendships ON friendships.freind_id = users.id
+where users.id=2 and users.id=4 and users.id=6;
+
+select * from friendships;
+
+insert into friendships(user_id,freind_id) values ('1','2'),('1','4'),('1','6');
+insert into friendships(user_id,freind_id) values ('2','1'),('2','3'),('2','5');
+insert into friendships(user_id,freind_id) values ('3','2'),('3','5');
+insert into friendships(user_id,freind_id) values ('4','3');
+insert into friendships(user_id,freind_id) values ('5','1'),('5','6');
+insert into friendships(user_id,freind_id) values ('6','2'),('6','3');
+
+select * from users 
+join friendships on users.id=friendships.freind_id;

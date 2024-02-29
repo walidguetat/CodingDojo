@@ -1,0 +1,17 @@
+
+
+
+
+.fond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cornflowerblue;
+    border-radius: 5%;
+    
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
