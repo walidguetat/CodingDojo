@@ -21,6 +21,12 @@ def onClickIncrementCounter():
             session['counter']+=1
     return redirect('/')
 
+@app.route('/plustwo',methods=['POST'])
+def onClickPlusTwo():
+    if 'counter' in session:
+            session['counter']+=2
+    return redirect('/')
+
 @app.route('/clear',methods=['POST'])
 def onReset():
     session.pop('counter')

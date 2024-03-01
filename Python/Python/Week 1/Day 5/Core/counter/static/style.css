@@ -13,7 +13,7 @@
 }
 
 
-button,.button1{
+button,.button1,.button2{
   background-color:blue; 
   border: none;
   color: white;
@@ -38,6 +38,14 @@ button:hover{
     color:gold;
 }
 
+.button2{
+    background-color:greenyellow; 
+}
+
+.button2:hover{
+    background-color: palevioletred;
+    color:aliceblue;
+}
 .inl{
     display: flex;
     flex-direction: row;
