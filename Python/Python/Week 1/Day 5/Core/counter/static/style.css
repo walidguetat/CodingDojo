@@ -14,7 +14,7 @@
 
 
 button,.button1{
-  background-color:red; 
+  background-color:blue; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -24,9 +24,18 @@ button,.button1{
   font-size: 16px;
   
 }
+button:hover{
+    background-color: gold;
+    color:black;
+}
 
 .button1{
-    background-color:blue; 
+    background-color:red; 
+}
+
+.button1:hover{
+    background-color: gray;
+    color:gold;
 }
 
 .inl{
