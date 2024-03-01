@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>********* Counter *********</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="fond">
+       
+            <div><h1>Counter</h1></div>
+            <div><h2>{{session["counter"]}}</h2></div>
+            <div class="inl">
+                <form action="/increment" method="POST">
+                    <button type="submit" >Click</button>
+                </form>
+                <form action="/clear" method="POST">
+                    <button type="submit" class="button1">Reset</button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
