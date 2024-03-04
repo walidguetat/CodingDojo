@@ -10,23 +10,23 @@
     <div class="fond">
         
                 <label for="name">
-                    <h1>{{name}}</h1>
+                    <h1>{{session['name']}}</h1>
                 </label>
                 
             
                 <label for="location">
-                    Dojo Location : {{countries}}
+                    Dojo Location : {{session['countries']}}
                 </label>
                 
             
                 <label for="favorite_langage">
-                    Favorite Language : {{langage}}
+                    Favorite Language : {{session['langage']}}
                 </label>
                 
             
            
                 <label for="comments">
-                    Comments : {{comments}}
+                    Comments : {{session['comments']}}
                 </label>
                 
                 <a href="/home">Home</a>
