@@ -9,7 +9,7 @@ const Display = ({ tasks, deleteTasks, readTasks }) => {
                 {tasks.map((oneTask, index) => (
                     <li key={index}>
                         <div>
-                            <input onChange={(e) => {readTasks(index);}}name="todo1"type="checkbox"checked={oneTask.status}/><label for="todo1" >
+                            <input onChange={(e) => {readTasks(index)}}name="todo1"type="checkbox"checked={oneTask.status}/><label for="todo1" >
                                 <span>{oneTask.title}</span>
                             </label>
                         </div>
