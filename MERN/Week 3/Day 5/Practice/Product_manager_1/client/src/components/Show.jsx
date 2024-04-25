@@ -10,7 +10,7 @@ const Show = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products/" + id)
+      .get("http://localhost:8000/api/products/" + id)
       .then((res) => {
         console.log(res.data);
         setProducts(res.data);
@@ -21,7 +21,7 @@ const Show = () => {
   }, [id]);
   const deleteProduct = (ProductID) => {
     axios
-      .delete("http://localhost:5000/api/products/" + ProductID)
+      .delete("http://localhost:8000/api/products/" + ProductID)
       .then((res) => {
         console.log(products);
         const Filtredproducts = products.filter((oneProduct) => {

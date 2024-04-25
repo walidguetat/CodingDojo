@@ -2,54 +2,60 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+
 const Create = () => {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
-  const [titleError, setTitleError] = useState("");
-  const [priceError, setPriceError] = useState("");
-  const [descriptionError, setDescriptionError] = useState("");
-
+  const [ErrorState, setError] = useState([])
   const nav = useNavigate();
   const SubmitHandler = (e) => {
     e.preventDefault();
     const newObj = {
       title,
       price,
-      description,
+      description
     };
     axios
-      .post("http://localhost:5000/api/products/", newObj)
+      .post("http://localhost:8000/api/products/", newObj)
       .then((res) => {
-        console.log("✅✅✅✅✅✅", res);
-        nav("/");
-        // nav("/notes/" + res.data._id)
+        console.log("✅✅✅✅✅✅", res.data._id);
+        //nav("/");
+        nav("/products/" + res.data._id)
       })
       .catch((err) => {
         console.log(err.response.data.errors.title);
-        const serverErrors = err.response.data.errors;
-        if (serverErrors.title) {
-          setTitleError(serverErrors.title.message);
-        } else {
-          setTitleError("");
+        const ServerErrors = err.response.data.errors
+        const errArray = []
+        for (const key of Object.keys(ServerErrors)) {
+            errArray.push(ServerErrors[key].message)
         }
-        if (serverErrors.price) {
-          setPriceError(serverErrors.price.message);
-        } else {
-          setPriceError("");
-        }
-        if (serverErrors.description) {
-          setDescriptionError(serverErrors.description.message);
-        } else {
-          setDescriptionError("");
-        }
-      });
-  };
+        setError(errArray)
+
+    })
+}
 
   return (
     <div>
       <form onSubmit={SubmitHandler}>
-        {titleError && <p style={{ color: "red" }}>{titleError}</p>}
+    
+
+    {/* card */}
+
+
+
+    <div className="card" style={{width:400}}>
+      <div className="card-body">
+
+
+                {
+                    ErrorState.map((err) => {
+                        return <p style={{ color: "red" }}>{err}</p>
+                    })
+                }
+
+
+      
         title :{" "}
         <input
           value={title}
@@ -57,7 +63,7 @@ const Create = () => {
           onChange={(e) => setTitle(e.target.value)}
         />{" "}
         <br />
-        {priceError && <p style={{ color: "red" }}>{priceError}</p>}
+        
         price :{" "}
         <input
           value={price}
@@ -65,7 +71,7 @@ const Create = () => {
           onChange={(e) => setPrice(e.target.value)}
         />{" "}
         <br />
-        {descriptionError && <p style={{ color: "red" }}>{descriptionError}</p>}
+        
         description :{" "}
         <textarea
           value={description}
@@ -73,7 +79,11 @@ const Create = () => {
         />{" "}
         <br />
         <br />
-        <button>Create Product</button>
+        <button type="button" className="btn btn-success">Success</button>
+      </div>
+    </div>
+
+
       </form>
     </div>
   );

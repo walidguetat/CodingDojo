@@ -8,7 +8,7 @@ const List = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("http://localhost:8000/api/products")
       .then((res) => {
         console.log(res.data);
         setProducts(res.data);
@@ -20,7 +20,7 @@ const List = () => {
 
   const deleteProduct = (ProductID) => {
     axios
-      .delete("http://localhost:5000/api/products/" + ProductID)
+      .delete("http://localhost:8000/api/products/" + ProductID)
       .then((res) => {
         console.log(products);
         const Filtredproducts = products.filter((oneProduct) => {

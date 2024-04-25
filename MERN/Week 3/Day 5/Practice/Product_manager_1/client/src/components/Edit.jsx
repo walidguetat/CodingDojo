@@ -15,7 +15,7 @@ const Edit = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products/" + id)
+      .get("http://localhost:8000/api/products/" + id)
       .then((res) => {
         console.log(res.data);
         setTitle(res.data.title);
@@ -32,10 +32,10 @@ const Edit = () => {
     const newObj = {
       title,
       price,
-      description,
+      description
     };
     axios
-      .patch(`http://localhost:5000/api/products/${id}`, newObj)
+      .patch(`http://localhost:8000/api/products/${id}`, newObj)
       .then((res) => {
         console.log(res);
         nav("/products/" + res.data._id);
