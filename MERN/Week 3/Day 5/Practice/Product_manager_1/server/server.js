@@ -1,13 +1,20 @@
 const express = require("express");
+
+const cors = require("cors");
 const app = express();
-require('dotenv').config();
-const port = process.env.PORT;
-    
+
+app.use(express.json(), express.urlencoded({ extended: true }), cors());
+
+require("dotenv").config();
+
 require("./config/mongoose.config");
-    
-app.use(express.json(), express.urlencoded({ extended: true }));
-    
-const AllMyProductsRoutes = require("./routes/products.routes");
-AllMyProductsRoutes(app);
-    
-app.listen(port, () => console.log(`Listening on port: ${port}`));
+
+const PORT = process.env.PORT;
+const AllProductsRoutes = require("./routes/products.routes");
+AllProductsRoutes(app);
+
+app.listen(PORT, () => {
+  console.log(
+    `🤩🤩🤩🤩 server is up and running on port ${PORT} ⚡ and ready for your Request an Response`
+  );
+});
