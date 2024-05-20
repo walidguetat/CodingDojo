@@ -59,7 +59,9 @@ public class TestOrders {
         // it will output the value of the 'total' attribute of the 'order1' object
         System.out.printf("Total: %s\n", order1.total);
         System.out.printf("Ready: %s\n", order1.ready);
-        System.out.printf("List of Items : %s\n", order1.items);
+        
+        System.out.printf("List of Items : %s \n", order1.items.get(0).name);
+        
         // Add item1 to order2's item list and increment the order's total.
         System.out.printf("Total: %s\n", order1.total+order2.total);
 
