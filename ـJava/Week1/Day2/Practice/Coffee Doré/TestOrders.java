@@ -28,19 +28,6 @@ public class TestOrders {
        order2.displayMenu();
        order3.displayMenu();
        
-       CoffeeKiosk kiosk = new CoffeeKiosk();
-
-        // Adding some menu items
-        kiosk.addMenuItem("Coffee", 3.50);
-        kiosk.addMenuItem("Tea", 2.75);
-        kiosk.addMenuItem("Muffin", 3.00);
-        kiosk.addMenuItem("Sandwich", 5.00);
-
-        // Display the menu
-        kiosk.displayMenu();
-
-        // Create a new order
-        kiosk.newOrder();
        
 
     }

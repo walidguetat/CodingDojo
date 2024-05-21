@@ -2,12 +2,10 @@ import java.util.ArrayList;
 public class Item {
     private String name;
     private double price;
-    private int index;
     private ArrayList<Item> items;
-    public Item(String name,double price,int index){
+    public Item(String name,double price){
         this.name=name;
         this.price=price;
-        this.index=index;
     }
      // getname()
     public String getName(){
@@ -16,15 +14,6 @@ public class Item {
     // setname()
     public void setName(String name){
         this.name=name;
-    }
-    
-    // getIndex()
-    public int getIndex(){
-        return index;
-    }
-    // setnamIndex()
-    public void setIndex(int index){
-        this.index=index;
     }
 
      // getPrice()
